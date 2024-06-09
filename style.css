@@ -1,0 +1,76 @@
+/*  First create the desktop view using grid
+    Then make the grid wrap the way you need when hitting the mobile pixel width
+    After that create flex boxes for each section about me, projects, etc.
+ */
+
+/* Use flexbox for navbar (and footer later on) use grid for the rest of the site */
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar {
+    display: flex;
+    border: 2px solid #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px 200px 1fr;
+}
+
+.about {
+    display: flex;
+}
+
+.projects {
+    display: flex;
+}
+
+.work-experience {
+    display: flex;
+}
+
+.contact {
+    display: flex;
+}
+
+.skills {
+    display: flex;
+}
+
+.education {
+    display: flex;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none; /* Remove default underline */
+    border: none;
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+  }
+  
+  .github-btn {
+    background-color: #333; /* Dark gray */
+    color: white;
+  }
+  
+  .linkedin-btn {
+    background-color: #0077b5; /* LinkedIn blue */
+    color: white;
+  }
+
+  .btn-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+
