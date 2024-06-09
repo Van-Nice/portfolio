@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
   }
 
 .navbar {
@@ -42,19 +43,37 @@ body {
 
 .main-grid {
     display: grid;
-    grid-template-columns: 1fr 400px 200px 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 20px;
+    border: 2px solid black;
+}
+
+.about, .projects, .work-experience {
+    grid-column: 1; /* This places these sections in the first column */
+}
+
+.contact, .skills, .education {
+    grid-column: 2; /* This places these sections in the second column */
+}
+
+.about, .contact {
+    order: 1;
 }
 
 .about {
-    display: flex;
+    grid-column: 1 / span 1;
+    order: 1;
 }
 
 .projects {
-    display: flex;
+    grid-column: 1 / 2;
+    order: 2;
 }
 
 .work-experience {
     display: flex;
+    order: 3;
 }
 
 .contact {
@@ -63,10 +82,12 @@ body {
 
 .skills {
     display: flex;
+    order: 5;
 }
 
 .education {
     display: flex;
+    order: 6;
 }
 
 .btn {
@@ -108,15 +129,15 @@ display: flex;
 flex-direction: column;
 }
 
-@media (max-width: 500px) { /* Adjust breakpoint as needed */
+@media (max-width: 550px) { 
     .navbar {
-        padding: 5px; /* Reduce padding for smaller screens */
+        padding: 5px; 
         height: 60vh;
     }
 
     .navbar .row {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center;   /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center;  
     }
 
     .navbar .btn-row {
@@ -125,13 +146,13 @@ flex-direction: column;
     }
 
     .navbar img {
-        width: 175px;          /* Smaller image size */
+        width: 175px;          
         height: 175px;
-        margin: 0 0 10px 0;    /* Adjust margins for mobile */
+        margin: 0 0 10px 0;
     }
 
     .navbar .column {
-        text-align: center;  /* Center text content */
+        text-align: center; 
     }
 
     .navbar h1 {
@@ -144,4 +165,6 @@ flex-direction: column;
     }
 }
 
-
+.about, .projects, .work-experience, .contact, .skills, .education {
+    border: 1px dotted gray; 
+}
