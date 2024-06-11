@@ -9,31 +9,38 @@ body {
     border: 2px solid black;
     grid-template-columns: 1fr minmax(500px, 2fr) minmax(250px, 1fr) 1fr;
     grid-template-rows: [top] 30vh [middle] auto [bottom];
-    grid-template-areas: "nav nav nav nav"
+    grid-template-areas: ". nav nav nav"
                          ". left-g right-g .";
     grid-column-gap: 20px;
 }
 
 .navbar {
-    grid-area: nav;
+    grid-area: 1/1/2/5;
     border: 2px solid #000;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-.navbar h1 {
-    margin-bottom: 0;
-}
-
-.navbar-content {
+.navbar-container {
     display: flex;
 }
 
-.navbar img {
+.navbar-container h1 {
+    margin-bottom: 0;
+}
+
+
+
+.navbar-content {
+    grid-area: nav;
+    border: 2px solid #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container img {
     width: 175px;            
     height: 175px;
     border-radius: 50%;      
@@ -85,43 +92,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-@media (max-width: 450px) { 
-    .navbar {
-        padding: 5px; 
-        height: 60vh;
-    }
-
-    .navbar .row {
-        flex-direction: column; 
-        align-items: center;  
-    }
-
-    .navbar .btn-row {
-        justify-content: center;
- 
-    }
-
-    .navbar img {
-        width: 175px;          
-        height: 175px;
-        margin: 0 0 10px 0;
-    }
-
-    .navbar .column {
-        text-align: center; 
-    }
-
-    .navbar h1 {
-        font-size: 2em;
-        margin-bottom: 0;
-    }
-
-    .navbar h3 {
-        font-size: 1.2em;
-    }
-}
-
 
 .left-grid {
     display: grid;
@@ -175,11 +145,22 @@ body {
     border: 2px solid black;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+    .main-grid{
+        grid-template-columns: 1fr minmax(400px, 6fr) 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: ". nav ."
+                             ". left-g ."
+                             ". right-g. ";
+    }
+
+}
+
+@media (max-width: 480px) {
     .main-grid {
-        grid-template-columns: 1fr 10fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: '. left-g .'
-                             '. right-g .';
+        grid-template-columns: 1fr 90vw 1fr;
+    }
+    .navbar-container {
+        flex-direction: column;
     }
 }
