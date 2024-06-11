@@ -4,8 +4,18 @@ body {
     font-family: sans-serif;
   }
 
+.main-grid {
+    display: grid;
+    border: 2px solid black;
+    grid-template-columns: 1fr minmax(500px, 2fr) minmax(250px, 1fr) 1fr;
+    grid-template-rows: [top] 30vh [middle] auto [bottom];
+    grid-template-areas: "nav nav nav nav"
+                         ". left-g right-g .";
+    grid-column-gap: 20px;
+}
+
 .navbar {
-    display: flex;
+    grid-area: nav;
     border: 2px solid #000;
     flex-direction: row;
     justify-content: center;
@@ -13,7 +23,6 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 30vh;
 }
 
 .navbar h1 {
@@ -22,7 +31,6 @@ body {
 
 .navbar-content {
     display: flex;
-
 }
 
 .navbar img {
@@ -44,36 +52,41 @@ body {
   }
 
 .btn:not(:last-child) {
-margin-right: 10px;
+    margin-right: 10px;
 }
   
 .github-btn {
-background-color: #333; 
-color: white;
+    background-color: #333; 
+    color: white;
 }
 
 .linkedin-btn {
-background-color: #0077b5; 
-color: white;
+    background-color: #0077b5; 
+    color: white;
 }
 
 .row {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .btn-row {
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
+
+.icon-text {
+    display: flex;
+    align-items: center;
+  }
 
 .column {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-@media (max-width: 550px) { 
+@media (max-width: 450px) { 
     .navbar {
         padding: 5px; 
         height: 60vh;
@@ -109,13 +122,6 @@ flex-direction: column;
     }
 }
 
-.main-grid {
-    display: grid;
-    border: 2px solid black;
-    grid-template-columns: 1fr 4fr 2fr 1fr;
-    grid-template-areas: ". left-g right-g .";
-    grid-column-gap: 20px;
-}
 
 .left-grid {
     display: grid;
@@ -145,7 +151,7 @@ flex-direction: column;
     display: grid;
     border: 2px solid black;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 500px 100px;
+    grid-template-rows: 150px 600px 300px;
     grid-template-areas: "contact"
                          "skills"
                          "education";
@@ -167,4 +173,13 @@ flex-direction: column;
 
 .contact, .skills, .education, .work, .project, .about {
     border: 2px solid black;
+}
+
+@media (max-width: 800px) {
+    .main-grid {
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: '. left-g .'
+                             '. right-g .';
+    }
 }
