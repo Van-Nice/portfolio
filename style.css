@@ -95,7 +95,7 @@ body {
 .left-grid {
     display: grid;
     /* border: 2px solid black; */
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: "about"
                          "projects"
                          "work";
@@ -175,6 +175,37 @@ body {
 .work {
     grid-area: work;
 }
+
+.work-body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.work-body .row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.work-body h4{
+    margin: 0;;
+}
+
+.work-body h3 {
+    margin-bottom: 0;
+}
+
+.work-body p {
+    margin-top: 0;
+}
+
+.work-body li {
+    margin-bottom: 10px; /* Adjust the value as needed */
+}
+
 
 .right-grid {
     display: grid;
