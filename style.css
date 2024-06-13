@@ -222,6 +222,7 @@ body {
 }
 
 /* Contact Me */
+
 .contact {
     grid-area: contact;
 }
@@ -264,6 +265,8 @@ body {
 .skills-body-bubbles {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
 }
 
 .skill-bubble {
@@ -282,12 +285,57 @@ body {
     border-bottom: 2px solid #333;
 }
 
-
-
 /* Education */
 
 .education {
     grid-area: education;
+}
+
+.education-body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+
+.education-body h4 {
+    padding-left: 10px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.education-body p {
+    font-size: small;
+    margin: 0;
+}
+.education-body i {
+    margin: 0;
+}
+
+.education-body .row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    margin: 0;
+    /* text-align: center; */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.education-body-location {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.degree {
+    padding-left: 10px;
+    margin: 0;
 }
 
 .contact, .skills, .education, .work, .project, .about {
