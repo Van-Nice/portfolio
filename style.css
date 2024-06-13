@@ -7,7 +7,7 @@ body {
 
 .main-grid {
     display: grid;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     color: white;
     grid-template-columns: 1fr minmax(500px, 2fr) minmax(250px, 1fr) 1fr;
     grid-template-rows: [top] 30vh [middle] auto [bottom];
@@ -17,7 +17,7 @@ body {
 
 .navbar {
     grid-area: 1/1/2/5;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
     background-color: #1e2021;
     flex-direction: row;
     padding: 0;
@@ -27,7 +27,7 @@ body {
 .navbar-content {
     display: flex;
     grid-area: nav;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
     justify-content: flex-start;
     align-items: center;
 }
@@ -98,7 +98,7 @@ body {
 
 .left-grid {
     display: grid;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     grid-template-rows: 1fr 2fr 2fr;
     grid-template-areas: "about"
                          "projects"
@@ -109,8 +109,21 @@ body {
     grid-area: left-g;
 }
 
+.header {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #333;
+}
+
 .about {
     grid-area: about;
+}
+
+.about-body {
+    padding: 20px;
+    max-width: 800px;
+    line-height: 1.6;
 }
 
 .project {
@@ -123,7 +136,7 @@ body {
 
 .right-grid {
     display: grid;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     grid-template-rows: 150px 600px 300px;
     grid-template-areas: "contact"
                          "skills"
@@ -146,7 +159,7 @@ body {
 }
 
 .contact, .skills, .education, .work, .project, .about {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: #181a1b;
 }
 
