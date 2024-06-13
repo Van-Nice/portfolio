@@ -71,8 +71,7 @@ body {
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .nav-row {
@@ -85,11 +84,6 @@ body {
     flex-direction: row;
     justify-content: flex-start;
 }
-
-.icon-text {
-    display: flex;
-    align-items: center;
-  }
 
 .column {
     display: flex;
@@ -116,19 +110,26 @@ body {
     border-bottom: 2px solid #333;
 }
 
+/* About Me */
+
 .about {
     grid-area: about;
 }
 
 .about-body {
+    align-items: center;
     padding: 20px;
     max-width: 800px;
     line-height: 1.6;
 }
 
+/* Projects */
+
 .project {
     grid-area: projects;
 }
+
+/* Work Experience */
 
 .work {
     grid-area: work;
@@ -146,13 +147,40 @@ body {
     grid-area: right-g;
 }
 
+/* Contact Me */
 .contact {
     grid-area: contact;
+    
 }
 
+.contact-body {
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* padding: 20px; */
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.contact-body .row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.contact-body .row p,
+.contact-body .row i {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+/* Skills */
 .skills {
     grid-area: skills;
 }
+
+/* Education */
 
 .education {
     grid-area: education;
@@ -162,6 +190,8 @@ body {
     /* border: 2px solid black; */
     background-color: #181a1b;
 }
+
+/* Tablet size */
 
 @media (max-width: 850px) {
     .main-grid{
@@ -183,6 +213,8 @@ body {
     }
 
 }
+
+/* Mobile size */
 
 @media (max-width: 480px) {
     .main-grid {
