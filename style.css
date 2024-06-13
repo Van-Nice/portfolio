@@ -10,7 +10,7 @@ body {
     /* border: 2px solid black; */
     color: white;
     grid-template-columns: 1fr minmax(500px, 2fr) minmax(250px, 1fr) 1fr;
-    grid-template-rows: [top] 30vh [middle] auto [bottom];
+    grid-template-rows: [top] auto [middle] auto [bottom];
     grid-template-areas: ". nav nav nav"
                          ". left-g right-g .";
 }
@@ -30,6 +30,8 @@ body {
     /* border: 2px solid #000; */
     justify-content: flex-start;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .navbar-content h1 {
@@ -129,6 +131,45 @@ body {
     grid-area: projects;
 }
 
+.project-body {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-gap: 20px
+}
+
+.project-card {
+    display: flex;
+    flex: 1 1 100px;
+    padding: 20px;
+    overflow: hidden;
+    border-bottom: 2px solid #333;
+    column-gap: 20px;
+}
+
+.project-card-img {
+    display: flex;
+    align-items: center;
+}
+
+.project-card-img img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.project-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-text h3 {
+    margin: 0;
+}
+
+.project-card-text a {
+    color: white;
+}
+
 /* Work Experience */
 
 .work {
@@ -208,8 +249,9 @@ body {
         margin-bottom: 20px;
     }
     .navbar-content img {
-        width: 125px;
-        height: 125px;
+        align-self: center;
+        width: 150px;
+        height: 150px;
     }
 
 }
