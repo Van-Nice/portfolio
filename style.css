@@ -2,27 +2,28 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background-color: #252f34;
   }
 
 .main-grid {
     display: grid;
     border: 2px solid black;
+    color: white;
     grid-template-columns: 1fr minmax(500px, 2fr) minmax(250px, 1fr) 1fr;
     grid-template-rows: [top] 30vh [middle] auto [bottom];
     grid-template-areas: ". nav nav nav"
                          ". left-g right-g .";
-    grid-column-gap: 20px;
 }
 
 .navbar {
     grid-area: 1/1/2/5;
     border: 2px solid #000;
+    background-color: #1e2021;
     flex-direction: row;
-
-    margin: 0;
     padding: 0;
     width: 100%;
 }
+
 .navbar-content {
     display: flex;
     grid-area: nav;
@@ -98,12 +99,13 @@ body {
 .left-grid {
     display: grid;
     border: 2px solid black;
-    grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 2fr;
     grid-template-areas: "about"
                          "projects"
                          "work";
-    grid-row-gap: 15px;
+    grid-row-gap: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
     grid-area: left-g;
 }
 
@@ -122,12 +124,12 @@ body {
 .right-grid {
     display: grid;
     border: 2px solid black;
-    grid-template-columns: 1fr;
     grid-template-rows: 150px 600px 300px;
     grid-template-areas: "contact"
                          "skills"
                          "education";
-    grid-row-gap: 15px;
+    grid-row-gap: 20px;
+    margin-top: 20px;
     grid-area: right-g;
 }
 
@@ -145,17 +147,23 @@ body {
 
 .contact, .skills, .education, .work, .project, .about {
     border: 2px solid black;
+    background-color: #181a1b;
 }
 
 @media (max-width: 850px) {
     .main-grid{
-        grid-template-columns: 1fr minmax(400px, 6fr) 1fr;
+        grid-template-columns: 1fr minmax(250px, 8fr) 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: ". nav ."
                              ". left-g ."
-                             ". right-g. ";
+                             ". right-g .";
     }
-
+    .left-grid {
+        margin-right: 0px;
+    }
+    .btn-row {
+        margin-bottom: 20px;
+    }
     .navbar-content img {
         width: 125px;
         height: 125px;
@@ -165,18 +173,22 @@ body {
 
 @media (max-width: 480px) {
     .main-grid {
-        grid-template-columns: 1fr 90vw 1fr;
+        grid-template-columns: .5fr minmax(250px, 8fr) .5fr;
     }
     .navbar-content .row {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
+
     .navbar-content {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    
+    .navbar-content .column h1, .navbar-content .column h2 {
+        text-align: center;
     }
 
     .navbar-content .column{
