@@ -143,6 +143,11 @@ body {
     grid-area: projects;
 }
 
+.header-link {
+    text-decoration: none; 
+    color: inherit;
+}
+
 .project-body {
     display: flex;
     flex-direction: column;
