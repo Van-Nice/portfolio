@@ -153,19 +153,16 @@ body {
     flex-direction: column;
 }
 
-.project-card-portfolio {
+.project-card {
     display: flex;
     flex: 1 1 100px;
     padding: 20px;
     border-bottom: 2px solid #333;
-    column-gap: 20px;
+    column-gap: 20px; 
 }
 
-.project-card-weather {
-    display: flex;
-    flex: 1 1 100px;
-    padding: 20px;
-    column-gap: 20px; 
+.project-card:last-child {
+    border-bottom: none;
 }
 
 .project-link {
