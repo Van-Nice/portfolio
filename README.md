@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-This is my personal portfolio website showcasing my skills, projects, work experience, and education. It's built using HTML, CSS, and Font Awesome icons.
+This is my personal portfolio website showcasing my skills, projects, work experience, and education. It's built using HTML and CSS.
  https://wilsonvannice.com
 
 ## Features
