@@ -1,246 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="/public/WV.svg" type="image/svg+xml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="icon" href="/public/WV.svg" type="image/svg+xml" />
     <title>Wilson Van Nice</title>
-</head>
-<body>
-  <div class="main-grid">
-    <!-- Navbar -->
-    <div class="navbar"> </div>
+  </head>
+  <body>
+    <div class="main-grid">
+      <!-- Navbar -->
+      <div class="navbar"></div>
       <div class="navbar-content">
-          <div class="row">
-            <img src="public/profile-pic.jpeg" alt="My Image">
-            <div class="column">
-              <h1>Wilson Van Nice</h1>
-              <h2>Full-Stack Software Engineer</h2>
-              <div class="btn-row">
-                <a href="https://github.com/Van-Nice" class="btn github-btn" alt="GitHub Icon" target="_blank" rel="noopener">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/wilson-van-nice/" class="btn linkedin-btn" alt="LinkedIn Icon"target="_blank" rel="noopener">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-      </div>
-    <!-- Left Side (Desktop) -->
-    <div class="left-grid">
-      <div class="about">
-        <div class="header">About Me</div>
-        <div class="about-body">
-          I am a Computer Science student at the University of Colorado Denver, passionate about web development and everything tech. Recently gained hands-on experience as a Software Engineer Intern at GBCS Group, building scalable solutions and implementing features to track and reduce greenhouse gas emissions.
-        </div>
-      </div>
-      <!-- Projects -->
-      <div class="project">
-        <div class="header">Projects</div>
-        <div class="project-body">
-          <!-- Bungo -->
-          <div class="project-card">
-            <div class="project-card-img">
-              <img src="public/document-editor.svg" alt="Document editor svg">
-            </div>
-            <div class="project-card-text">
-              <a href="https://bungo.rocks" class="header-link" target="_blank" rel="noopener noreferrer"><h3>Bungo - Text Editor</h3></a>
-              <p>Developed and deployed Bungo, a full-stack collaborative text editor using React.js, Gin Framework(Golang), and AWS infrastructure (EC2, RDS). The application features real-time editing via WebSocket protocol, JWT authentication, and comprehensive document management with multiple export formats. Built using a microservices architecture, the platform provides a seamless writing experience with responsive UI and robust data persistence.</p>
-              <div class="row">
-                <a href="https://bungo.rocks" target="_blank" rel="noopener noreferrer" class="project-link">Check it out</a>
-              </div>
-            </div>
-          </div>
-          <!-- Wilson's Weather -->
-          <div class="project-card">
-            <div class="project-card-img">
-              <img src="public/weather-color-sun-cloud-svgrepo-com.svg" alt="Partly cloudy sun svg"> 
-            </div>
-            <div class="project-card-text">
-              <a href="https://wilsons-weather.com" class="header-link" target="_blank" rel="noopener noreferrer"><h3>Wilson's Weather - Weather Forecast Website</h3></a>              
-              <p>Wilson's Weather is a web application designed to provide real-time weather updates based on user location or manual search input. It leverages geolocation for auto-detecting the user's position or allows users to search for a specific location to get weather details.</p>
-              <div class="row">
-                <a href="https://github.com/Van-Nice/weather-app-client" target="_blank" rel="noopener noreferrer" class="project-link">Front-End</a>
-                <a href="https://github.com/Van-Nice/weather-app-server" target="_blank" rel="noopener noreferrer" class="project-link">Back-End</a>
-              </div>
-            </div>
-          </div>
-          <!-- Pokemon Web Scrape Project -->
-          <div class="project-card">
-            <div class="project-card-img">
-              <img src="public/cobweb-spider-web-svgrepo-com.svg" alt="Spider web svg">
-            </div>
-            <div class="project-card-text">
-              <h3>PokeScrape - Pokemon Web Scraper</h3>              
-              <p>This project is designed to scrape Pokémon data from Pokémon Database using PHP and the Goutte web scraping library. It extracts various details about each Pokémon, such as Pokedex data, training info, breeding, base stats, and more, and saves this data in JSON format.</p>
-              <div class="row">
-                <a href="https://github.com/Van-Nice/poke-scrape" target="_blank" rel="noopener noreferrer" class="project-link">Project Code</a>
-              </div>
-            </div>
-          </div>
-          <!-- Portfolio Site -->
-          <div class="project-card">
-            <div class="project-card-img">
-              <img src="public/website-generic-svgrepo-com.svg" alt="Website svg"> 
-            </div>
-            <div class="project-card-text">
-              <a href="https://wilsonvannice.com" target="_blank" rel="noopener noreferrer" class="header-link"><h3>This Website - Personal Portfolio</h3></a> 
-              <p>I built this website using good old HTML & CSS to showcase my skills through projects, education and work experience.</p>
-              <div class="row">
-                <a href="https://github.com/Van-Nice/portfolio" target="_blank" rel="noopener noreferrer" class="project-link">Project Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Work Experience -->
-      <div class="work">
-        <div class="header">Work Experience</div>
-        <div class="work-body">
-          <h3>GBCS Group</h3>
-          <div class="row">
-            <h4>Software Engineer Intern</h4>
-            <p>Feb. 2024 - Present</p>
-          </div>
-          <ul>
-            <li>
-              Integrated front-end and backend systems, ensuring efficient data flow and system reliability, which
-              contributed to the successful deployment of scalable web solutions.
-            </li>
-            <li>
-              Developed robust API endpoints using FastAPI to facilitate real-time tracking and reduction strategies for
-              greenhouse gas emissions. Implemented complex mathematical models to support environmental
-              sustainability efforts.
-            </li>
-            <li>
-              Integrated front-end and backend systems, ensuring efficient data flow and system reliability, which
-              contributed to the successful deployment of scalable web solutions
-            </li>
-            <li>
-              Engaged in agile development processes, contributing to team meetings and effectively managing time to
-              meet project deadlines.
-            </li>
-          </ul>
-          <h3>Microtrain Technologies</h3>
-          <div class="row">
-            <h4>Engagement Coordinator</h4>
-            <p>Jan. 2020 - Aug. 2021</p>
-          </div> 
-          <ul>
-            <li>
-              Collaborated with tech lead to design and implement new CSM features.
-            </li>
-            <li>
-              Utilized Python for basic data manipulation and analysis tasks.
-            </li>
-            <li>
-              Coordinated company supply orders and managed logistics.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- Right Side (Desktop) -->
-    <div class="right-grid">
-      <!-- Contact Me -->
-      <div class="contact">
-        <div class="header">Contact Me</div>
-        <div class="contact-body">
-          <div class="row">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Denver, CO</p>
-          </div>
-          <div class="row">
-            <i class="fas fa-envelope"></i> 
-            <p>wilsonwvannice@gmail.com</p>
-          </div>
-        </div>
-      </div>
-      <div class="skills">
-        <!-- Technical Skills -->
-        <div class="header">Technical Skills</div>
-        <div class="skills-body">
-          <!-- Front End -->
+        <div class="row">
+          <img src="public/profile-pic.jpeg" alt="My Image" />
           <div class="column">
-            <h5>Front End</h5>
-            <div class="skills-body-bubbles">
-              <span class="skill-bubble">HTML</span>
-              <span class="skill-bubble">CSS</span>
-              <span class="skill-bubble">Javascript</span>
-              <span class="skill-bubble">React</span>
-              <span class="skill-bubble">Next JS</span>
-              <span class="skill-bubble">Selenium</span>
-            </div>
-          </div>
-          <!-- Back End -->
-          <div class="column">
-            <h5>Back End</h5>
-            <div class="skills-body-bubbles">
-              <span class="skill-bubble">Python</span>
-              <span class="skill-bubble">Typescript</span>
-              <span class="skill-bubble">Golang</span>
-              <span class="skill-bubble">Gin</span>
-              <span class="skill-bubble">C++</span>
-              <span class="skill-bubble">SQL</span>
-              <span class="skill-bubble">Django</span>
-            </div>
-          </div>
-          <!-- Tools -->
-          <div class="column">
-            <h5>Tools</h5>
-            <div class="skills-body-bubbles">
-              <span class="skill-bubble">Git</span>
-              <span class="skill-bubble">AWS Hosting</span>
-              <span class="skill-bubble">Git</span>
-              <span class="skill-bubble">GitHub</span>
-              <span class="skill-bubble">Docker</span>
-              <span class="skill-bubble">Bash</span>
-              <span class="skill-bubble">vscode</span>
+            <h1>Wilson Van Nice</h1>
+            <h2>Full-Stack Software Engineer</h2>
+            <div class="btn-row">
+              <a
+                href="https://github.com/Van-Nice"
+                class="btn github-btn"
+                alt="GitHub Icon"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/wilson-van-nice/"
+                class="btn linkedin-btn"
+                alt="LinkedIn Icon"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <!-- Education -->
-      <div class="education">
-        <div class="header">Education</div>
-        <div class="education-body">
-          <!-- CU Denver -->
-          <h4><i class="fas fa-graduation-cap"></i> University of Colorado Denver</h4>
-          <div class="degree">
-            <p>B.A. Computer Science</p>
+      <!-- Left Side (Desktop) -->
+      <div class="left-grid">
+        <div class="about">
+          <div class="header">About Me</div>
+          <div class="about-body">
+            I am a Computer Science graduate from the University of Colorado
+            Denver, passionate about web development and everything tech. I am
+            actively seeking full-time software engineering opportunities where
+            I can apply my skills and continue growing. I have hands-on
+            experience as a Software Engineer Intern at GBCS Group, where I
+            built scalable solutions and implemented features to track and
+            reduce greenhouse gas emissions.
           </div>
-          <div class="row">
-            <p>Jan. 2024 - May 2025</p>
-            <div class="education-body-location">
+        </div>
+        <!-- Projects -->
+        <div class="project">
+          <div class="header">Projects</div>
+          <div class="project-body">
+            <!-- Env -->
+            <div class="project-card">
+              <div class="project-card-img">
+                <img src="public/env.svg" alt="Env project logo" />
+              </div>
+              <div class="project-card-text">
+                <a
+                  href="https://env.software"
+                  class="header-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><h3>Env - Secure File Sharing</h3></a
+                >
+                <p>
+                  A secure file sharing application built with Next.js, React,
+                  and TypeScript. It allows users to upload, encrypt, and share
+                  files via email or a secure link. The backend leverages Prisma
+                  ORM with a PostgreSQL database, and integrates with AWS
+                  services like S3 for file storage, SES for sending emails, and
+                  KMS for cryptographic key management. Authentication is
+                  handled using NextAuth.js, providing a robust and secure user
+                  experience.
+                </p>
+                <div class="row">
+                  <a
+                    href="https://env.software"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    >Visit Site</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Code Kanban -->
+            <div class="project-card">
+              <div class="project-card-img">
+                <img
+                  src="public/codekanban.svg"
+                  alt="Code Kanban project logo"
+                />
+              </div>
+              <div class="project-card-text">
+                <a
+                  href="https://github.com/Van-Nice/code-kanban"
+                  class="header-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><h3>Code Kanban - VS Code Extension</h3></a
+                >
+                <p>
+                  A Kanban board extension for VS Code that helps you manage
+                  tasks and workflows directly within your development
+                  environment. Create, edit, and delete boards, columns, and
+                  cards with drag-and-drop functionality. The extension's UI is
+                  built with Svelte and Tailwind CSS, and it communicates with
+                  the VS Code extension host using the VS Code API.
+                </p>
+                <div class="row">
+                  <a
+                    href="https://github.com/Van-Nice/code-kanban"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    >Project Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Bungo -->
+            <div class="project-card">
+              <div class="project-card-img">
+                <img
+                  src="public/document-editor.svg"
+                  alt="Document editor svg"
+                />
+              </div>
+              <div class="project-card-text">
+                <a
+                  href="https://bungo.rocks"
+                  class="header-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><h3>Bungo - Text Editor</h3></a
+                >
+                <p>
+                  Developed and deployed Bungo, a full-stack collaborative text
+                  editor using React.js, Gin Framework(Golang), and AWS
+                  infrastructure (EC2, RDS). The application features real-time
+                  editing via WebSocket protocol, JWT authentication, and
+                  comprehensive document management with multiple export
+                  formats. Built using a microservices architecture, the
+                  platform provides a seamless writing experience with
+                  responsive UI and robust data persistence.
+                </p>
+                <div class="row">
+                  <a
+                    href="https://bungo.rocks"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    >Check it out</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Wilson's Weather -->
+            <div class="project-card">
+              <div class="project-card-img">
+                <img
+                  src="public/weather-color-sun-cloud-svgrepo-com.svg"
+                  alt="Partly cloudy sun svg"
+                />
+              </div>
+              <div class="project-card-text">
+                <a
+                  href="https://wilsons-weather.com"
+                  class="header-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><h3>Wilson's Weather - Weather Forecast Website</h3></a
+                >
+                <p>
+                  Wilson's Weather is a web application designed to provide
+                  real-time weather updates based on user location or manual
+                  search input. It leverages geolocation for auto-detecting the
+                  user's position or allows users to search for a specific
+                  location to get weather details.
+                </p>
+                <div class="row">
+                  <a
+                    href="https://github.com/Van-Nice/weather-app-client"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    >Front-End</a
+                  >
+                  <a
+                    href="https://github.com/Van-Nice/weather-app-server"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    >Back-End</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Pokemon Web Scrape Project -->
+            <div class="project-card">
+              <div class="project-card-img">
+                <img
+                  src="public/cobweb-spider-web-svgrepo-com.svg"
+                  alt="Spider web svg"
+                />
+              </div>
+              <div class="project-card-text">
+                <h3>PokeScrape - Pokemon Web Scraper</h3>
+                <p>
+                  This project is designed to scrape Pokémon data from Pokémon
+                  Database using PHP and the Goutte web scraping library. It
+                  extracts various details about each Pokémon, such as Pokedex
+                  data, training info, breeding, base stats, and more, and saves
+                  this data in JSON format.
+                </p>
+                <div class="row">
+                  <a
+                    href="https://github.com/Van-Nice/poke-scrape"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    >Project Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Site -->
+            <div class="project-card">
+              <div class="project-card-img">
+                <img
+                  src="public/website-generic-svgrepo-com.svg"
+                  alt="Website svg"
+                />
+              </div>
+              <div class="project-card-text">
+                <a
+                  href="https://wilsonvannice.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="header-link"
+                  ><h3>This Website - Personal Portfolio</h3></a
+                >
+                <p>
+                  I built this website using good old HTML & CSS to showcase my
+                  skills through projects, education and work experience.
+                </p>
+                <div class="row">
+                  <a
+                    href="https://github.com/Van-Nice/portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    >Project Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Work Experience -->
+        <div class="work">
+          <div class="header">Work Experience</div>
+          <div class="work-body">
+            <h3>GBCS Group</h3>
+            <div class="row">
+              <h4>Software Engineer Intern</h4>
+              <p>Feb. 2024 - Present</p>
+            </div>
+            <ul>
+              <li>
+                Integrated front-end and backend systems, ensuring efficient
+                data flow and system reliability, which contributed to the
+                successful deployment of scalable web solutions.
+              </li>
+              <li>
+                Developed robust API endpoints using FastAPI to facilitate
+                real-time tracking and reduction strategies for greenhouse gas
+                emissions. Implemented complex mathematical models to support
+                environmental sustainability efforts.
+              </li>
+              <li>
+                Integrated front-end and backend systems, ensuring efficient
+                data flow and system reliability, which contributed to the
+                successful deployment of scalable web solutions
+              </li>
+              <li>
+                Engaged in agile development processes, contributing to team
+                meetings and effectively managing time to meet project
+                deadlines.
+              </li>
+            </ul>
+            <h3>Microtrain Technologies</h3>
+            <div class="row">
+              <h4>Engagement Coordinator</h4>
+              <p>Jan. 2020 - Aug. 2021</p>
+            </div>
+            <ul>
+              <li>
+                Collaborated with tech lead to design and implement new CSM
+                features.
+              </li>
+              <li>
+                Utilized Python for basic data manipulation and analysis tasks.
+              </li>
+              <li>Coordinated company supply orders and managed logistics.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Right Side (Desktop) -->
+      <div class="right-grid">
+        <!-- Contact Me -->
+        <div class="contact">
+          <div class="header">Contact Me</div>
+          <div class="contact-body">
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
               <p>Denver, CO</p>
             </div>
-          </div>
-          <!-- FRCC -->
-          <h4><i class="fas fa-graduation-cap"></i> Front Range Community College</h4>
-          <div class="row">
-            <p>Jan. 2023 - Dec. 2023</p>
-            <div class="education-body-location">
-              <p>Longmont, CO</p>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <p>wilsonwvannice@gmail.com</p>
             </div>
           </div>
-          <!-- COD -->
-          <h4><i class="fas fa-graduation-cap"></i> College of DuPage</h4>
-          <div class="row">
-            <p>June 2021 - Dec. 2022</p>
-            <div class="education-body-location">
-              <p>Glenn Ellyn, IL</p>
+        </div>
+        <div class="skills">
+          <!-- Technical Skills -->
+          <div class="header">Technical Skills</div>
+          <div class="skills-body">
+            <!-- Front End -->
+            <div class="column">
+              <h5>Front End</h5>
+              <div class="skills-body-bubbles">
+                <span class="skill-bubble">HTML</span>
+                <span class="skill-bubble">CSS</span>
+                <span class="skill-bubble">Javascript</span>
+                <span class="skill-bubble">React</span>
+                <span class="skill-bubble">Next JS</span>
+                <span class="skill-bubble">Svelte</span>
+                <span class="skill-bubble">Selenium</span>
+              </div>
+            </div>
+            <!-- Back End -->
+            <div class="column">
+              <h5>Back End</h5>
+              <div class="skills-body-bubbles">
+                <span class="skill-bubble">Python</span>
+                <span class="skill-bubble">Typescript</span>
+                <span class="skill-bubble">Golang</span>
+                <span class="skill-bubble">Gin</span>
+                <span class="skill-bubble">C++</span>
+                <span class="skill-bubble">SQL</span>
+                <span class="skill-bubble">Prisma</span>
+                <span class="skill-bubble">NextAuth.js</span>
+                <span class="skill-bubble">Django</span>
+              </div>
+            </div>
+            <!-- Tools -->
+            <div class="column">
+              <h5>Tools</h5>
+              <div class="skills-body-bubbles">
+                <span class="skill-bubble">Git</span>
+                <span class="skill-bubble">AWS Hosting</span>
+                <span class="skill-bubble">GitHub</span>
+                <span class="skill-bubble">Docker</span>
+                <span class="skill-bubble">Bash</span>
+                <span class="skill-bubble">vscode</span>
+                <span class="skill-bubble">Twilio</span>
+                <span class="skill-bubble">Nodemailer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Education -->
+        <div class="education">
+          <div class="header">Education</div>
+          <div class="education-body">
+            <!-- CU Denver -->
+            <h4>
+              <i class="fas fa-graduation-cap"></i> University of Colorado
+              Denver
+            </h4>
+            <div class="degree">
+              <p>B.A. Computer Science</p>
+            </div>
+            <div class="row">
+              <p>Jan. 2024 - May 2025</p>
+              <div class="education-body-location">
+                <p>Denver, CO</p>
+              </div>
+            </div>
+            <!-- FRCC -->
+            <h4>
+              <i class="fas fa-graduation-cap"></i> Front Range Community
+              College
+            </h4>
+            <div class="row">
+              <p>Jan. 2023 - Dec. 2023</p>
+              <div class="education-body-location">
+                <p>Longmont, CO</p>
+              </div>
+            </div>
+            <!-- COD -->
+            <h4><i class="fas fa-graduation-cap"></i> College of DuPage</h4>
+            <div class="row">
+              <p>June 2021 - Dec. 2022</p>
+              <div class="education-body-location">
+                <p>Glenn Ellyn, IL</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="footer">
+        <p>Thanks for stopping by!</p>
+      </div>
     </div>
-    <div class="footer">
-      <p>Thanks for stopping by!</p>
-    </div>
-  </div>
-
-</body>
+  </body>
 </html>
